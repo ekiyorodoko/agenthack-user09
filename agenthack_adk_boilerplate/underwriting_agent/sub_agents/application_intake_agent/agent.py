@@ -34,6 +34,6 @@ application_intake_agent = Agent(
     #     3. Create a list containing these functions/tools.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[fetch_user_profile,fetch_account_details,create_loan_application], # Replace this with the actual list of tools
     #====End your code here====
 )
