@@ -51,7 +51,14 @@ financial_coordinator = LlmAgent(
     #     3. Assemble these `AgentTool` instances into a list for the `tools` parameter.
     #     Refer to ADK documentation on how to use AgentTool to integrate sub-agents.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of AgentTool instances
+    tools=[
+        AgentTool(data_analyst_agent),
+        AgentTool(account_data_agent),
+        AgentTool(credit_eligibility_agent),
+        AgentTool(spending_advisor_agent),
+        AgentTool(savings_goal_advisor_agent),
+        AgentTool(faq_agent),
+    ],
     #====End your code here====
 )
 

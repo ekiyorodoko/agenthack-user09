@@ -31,6 +31,6 @@ data_analyst_agent = Agent(
     #     2. Create a list containing the imported `google_search` tool.
     #     Refer to the ADK documentation for available built-in tools and how to add them.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[google_search], # Replace this with the actual list of tools
     #====End your code here====
 )
