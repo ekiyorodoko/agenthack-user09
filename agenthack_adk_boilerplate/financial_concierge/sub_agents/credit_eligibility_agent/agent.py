@@ -1,5 +1,6 @@
 # financial_concierge/sub_agents/credit_eligibility_agent/agent.py
 from google.adk.agents import Agent
+from bank_api_client import fetch_user_profile, fetch_transaction_history, fetch_account_details, fetch_credit_card_products
 
 from financial_concierge.bank_api_client import (
     fetch_user_profile,
@@ -25,6 +26,6 @@ credit_eligibility_agent = Agent(
     #     2. Create a list containing these imported functions.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[fetch_account_details,fetch_credit_card_products,fetch_transaction_history,fetch_user_profile], # Replace this with the actual list of tools
     #====End your code here====
 )
