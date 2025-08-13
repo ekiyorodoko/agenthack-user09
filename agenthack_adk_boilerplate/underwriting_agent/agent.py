@@ -30,7 +30,7 @@ underwriting_coordinator_agent = LlmAgent(
     #     3. Assemble these `AgentTool` instances into a list for the `tools` parameter.
     #     Refer to ADK documentation on how to use AgentTool to integrate sub-agents.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of AgentTool instances
+    tools=[application_intake_agent, financial_analysis_agent, credit_risk_assessment_agent, loan_structuring_agent], # Replace this with the actual list of AgentTool instances
     #====End your code here====
 )
 
