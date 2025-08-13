@@ -29,6 +29,6 @@ credit_risk_assessment_agent = Agent(
     #     2. Create a list containing these imported functions.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[get_credit_report,perform_fraud_check,get_property_valuation,assess_business_risk,fetch_user_profile,fetch_account_details], # Replace this with the actual list of tools
     #====End your code here====
 )
