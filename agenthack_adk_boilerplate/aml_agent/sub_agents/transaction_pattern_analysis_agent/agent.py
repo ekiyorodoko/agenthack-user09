@@ -15,6 +15,6 @@ transaction_pattern_analysis_agent = Agent(
     #     2. Create a list containing this imported function.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[get_account_profile_and_history_summary],
     #====End your code here====
 )

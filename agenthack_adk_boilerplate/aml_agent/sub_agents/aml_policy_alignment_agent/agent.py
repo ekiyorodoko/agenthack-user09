@@ -17,5 +17,12 @@ from config import DEFAULT_LLM_MODEL as MODEL
 #        - tools: This agent does not require any external tools, so pass an empty list `[]`.
 #     Assign the instantiated agent to a variable named `aml_policy_alignment_agent`.
 #====Start your code here====
-# aml_policy_alignment_agent = ... # Your agent definition here
+aml_policy_alignment_agent = Agent(
+    model=MODEL,
+    name="aml_policy_alignment_agent",
+    instruction=prompt.AML_POLICY_ALIGNMENT_PROMPT,
+    output_key="aml_policy_alignment_output",
+    tools=[]
+)
+tools = []
 #====End your code here====

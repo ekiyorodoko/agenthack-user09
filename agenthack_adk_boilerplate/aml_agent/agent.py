@@ -46,7 +46,13 @@ aml_coordinator_agent = LlmAgent(
     #        - aml_policy_alignment_agent
     #     Refer to the ADK documentation for how to add tools and AgentTools.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[
+        fetch_transaction_history,
+        AgentTool(transaction_pattern_analysis_agent),
+        AgentTool(geographic_risk_assessment_agent),
+        AgentTool(entity_linkage_analysis_agent),
+        AgentTool(aml_policy_alignment_agent)
+    ],
     #====End your code here====
 )
 

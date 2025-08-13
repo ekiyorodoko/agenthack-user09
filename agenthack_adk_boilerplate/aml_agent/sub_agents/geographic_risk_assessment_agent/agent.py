@@ -21,6 +21,6 @@ geographic_risk_assessment_agent = Agent(
     #     2. Create a list containing these imported functions.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[get_country_risk_rating, direct_google_maps_geocoding_tool],
     #====End your code here====
 )
