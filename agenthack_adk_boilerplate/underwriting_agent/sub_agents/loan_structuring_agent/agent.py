@@ -16,6 +16,6 @@ loan_structuring_agent = Agent(
     #     2. Create a list containing this imported function.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[get_applicable_loan_products_and_rates], # Replace this with the actual list of tools
     #====End your code here====
 )
