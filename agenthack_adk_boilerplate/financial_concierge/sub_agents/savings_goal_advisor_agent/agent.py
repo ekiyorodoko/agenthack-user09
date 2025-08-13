@@ -1,13 +1,12 @@
 # financial_concierge/sub_agents/savings_goal_advisor_agent/agent.py
 from google.adk.agents import Agent
-
 from financial_concierge.bank_api_client import (
     create_savings_goal,
     get_savings_goals,
     update_savings_goal,
     delete_savings_goal,
-    fetch_transaction_history, # For suggesting contributions
-    fetch_account_details    # For context like current balance
+    fetch_transaction_history,  # For suggesting contributions
+    fetch_account_details       # For context like current balance
 )
 from . import prompt
 from config import DEFAULT_LLM_MODEL as MODEL
@@ -29,6 +28,6 @@ savings_goal_advisor_agent = Agent(
     #     2. Create a list containing these imported functions.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[], # Replace this with the actual list of tools
+    tools=[create_savings_goal,get_savings_goals,update_savings_goal,delete_savings_goal,fetch_transaction_history,fetch_account_details], # Replace this with the actual list of tools
     #====End your code here====
 )
