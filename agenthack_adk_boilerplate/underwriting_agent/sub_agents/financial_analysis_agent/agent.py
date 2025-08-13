@@ -25,6 +25,6 @@ financial_analysis_agent = Agent(
     #     3. Create a list containing these functions/tools.
     #     Refer to the ADK documentation for how to add tools to an agent.
     #====Start your code here====
-    tools=[read_file_tool,fetch_transaction_history], # Replace this with the actual list of tools
+    tools=[fetch_transaction_history], # Replace this with the actual list of tools
     #====End your code here====
 )
